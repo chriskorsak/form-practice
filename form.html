@@ -8,13 +8,56 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Form Practice</h1>
-    <form >
-      <label for="firstName">First Name</label>
-      <input type="text" id="firstName" placeholder="John">
-      <label for="lastName">Last Name</label>
-      <input type="text" id="lastName" placeholder="Smith">
+    <div class="container">
+      <h1>Form Practice</h1>
+      <form >
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" placeholder="John" required>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" placeholder="Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="yourChoice">Your Choice</label>
+          <input type="radio" id="yourChoice" name="gender" value="undisclosed">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" required minlength="5" maxlength="10">
+        </div>
+        <div class="form-group">
+          <label for="birthday">Birthday</label>
+          <select name="MONTH" id="month">
+            <option value="">January</option>
+            <option value="">February</option>
+            <option value="">December</option>
+          </select>
+          <select name="DAY" id="day">
+            <option value="">01</option>
+            <option value="">05</option>
+            <option value="">22</option>
+          </select>
+          <select name="YEAR" id="year">
+            <option value="">1968</option>
+            <option value="">1984</option>
+            <option value="">1999</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="agree">I agree to the terms and conditions</label>
+          <input type="checkbox" name="AGREE" id="agree" value="yes" required>
+        </div>
+        <div class="form-group">
+          <button>Submit</button>
+        </div>
 
-    </form>
+      </form>
+    </div>
   </body>
 </html>
